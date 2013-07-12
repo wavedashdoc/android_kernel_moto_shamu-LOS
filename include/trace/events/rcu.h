@@ -591,7 +591,11 @@ TRACE_EVENT(rcu_invoke_kfree_callback,
 TRACE_EVENT(rcu_batch_end,
 
 	TP_PROTO(const char *rcuname, int callbacks_invoked,
+<<<<<<< HEAD
 		 char cb, char nr, char iit, char risk),
+=======
+		 bool cb, bool nr, bool iit, bool risk),
+>>>>>>> e66c33d... rcu: Add const annotation to char * for RCU tracepoints and functions
 
 	TP_ARGS(rcuname, callbacks_invoked, cb, nr, iit, risk),
 
